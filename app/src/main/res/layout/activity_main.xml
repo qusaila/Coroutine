@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout  xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+        <variable
+            name="obj"
+            type="com.example.coroutine.ui.main_page.MainViewModel" />
+    </data>
+    <RelativeLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.main_page.MainActivity">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{obj.postInfo.title}"
+android:layout_centerInParent="true"
+            />
+
+    </RelativeLayout>
+</layout>
